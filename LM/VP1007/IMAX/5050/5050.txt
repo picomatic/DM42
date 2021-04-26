@@ -1,0 +1,27 @@
+LBL "5050"
+MVAR "IAMP"
+MVAR "IADC"
+VARMENU "5050"
+CF 21
+REALRES
+STOP
+ASTO "CONTROL"
+PGMSLV "50501"
+SOLVE IND "CONTROL"
+VIEW IND "CONTROL"
+GTO "5050"
+LBL "50501"
+@ your code starts here
+RCL "IAMP"
+1024
+x
+5
+/
+2.0
+/
+4
+/
+RCL "IADC"
+-
+@ your code ends here
+END

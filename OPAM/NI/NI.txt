@@ -1,0 +1,27 @@
+LBL "NI"
+MVAR "Vo"
+MVAR "Vi"
+MVAR "Rg-"
+MVAR "Ro-"
+VARMENU "NI"
+CF 21
+REALRES
+STOP
+ASTO "CONTROL"
+PGMSLV "NI1"
+SOLVE IND "CONTROL"
+VIEW IND "CONTROL"
+GTO "NI"
+LBL "NI1"
+@ your code starts here
+RCL "Ro-"
+RCL "Rg-"
+/
+1
++
+RCL "Vi"
+x
+RCL "Vo"
+-
+@ your code ends here
+END

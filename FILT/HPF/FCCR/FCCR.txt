@@ -1,0 +1,28 @@
+LBL "FCCR"
+MVAR "Fc"
+MVAR "R"
+MVAR "C"
+VARMENU "FCCR"
+CF 21
+REALRES
+STOP
+ASTO "CONTROL"
+PGMSLV "FCCR1"
+SOLVE IND "CONTROL"
+VIEW IND "CONTROL"
+GTO "FCCR"
+LBL "FCCR1"
+@ your code starts here
+2
+ENTER
+PI
+x
+RCL "R"
+x
+RCL "C"
+x
+1/x
+RCL "Fc"
+-
+@ your code ends here
+END

@@ -1,0 +1,26 @@
+LBL "IN"
+MVAR "Vi"
+MVAR "Vo"
+MVAR "Ri"
+MVAR "Rf"
+VARMENU "IN"
+CF 21
+REALRES
+STOP
+ASTO "CONTROL"
+PGMSLV "IN1"
+SOLVE IND "CONTROL"
+VIEW IND "CONTROL"
+GTO "IN"
+LBL "IN1"
+@ your code starts here
+RCL "Rf"
+RCL "Ri"
+/
+RCL "Vi"
+x
++/-
+RCL "Vo"
+-
+@ your code ends here
+END
